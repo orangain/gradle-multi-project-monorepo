@@ -15,4 +15,3 @@ repositories {
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
 }
-
