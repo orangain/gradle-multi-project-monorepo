@@ -1,0 +1,22 @@
+name: Build inventory-app
+on:
+  push:
+    paths:
+      - "apps/inventory-app/**"
+      - "libs/profile/**"
+      - "*.gradle.kts"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-java@v1
+        with:
+          java-version: '11'
+
+      - name: Run gradle build
+        run: ./gradlew :apps:inventory-app:build
+
+      - uses: actions/upload-artifact@v2
+        with:
+          path: apps/inventory-app/build/libs/*.jar

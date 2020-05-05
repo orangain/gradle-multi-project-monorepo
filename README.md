@@ -1,6 +1,6 @@
 # gradle-multi-project-monorepo
 
-This is an example project to use Gradle multi-project build in monorepo.
+This is an example project to use Gradle multi-project build in monorepo. It uses GitHub Actions's [on.push.paths](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestpaths) to build only changed sub-project of the project.
 
 ## Description
 
