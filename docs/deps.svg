@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="151px" preserveAspectRatio="none" style="width:355px;height:151px;" version="1.1" viewBox="0 0 355 151" width="355px" zoomAndPan="magnify"><defs><filter height="300%" id="f2a7z3bgmnie9" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[770389ab9df153645bc6ef28055eb2b5]
+entity A--><rect fill="#FEFECE" filter="url(#f2a7z3bgmnie9)" height="36.2969" style="stroke: #000000; stroke-width: 1.5;" width="147" x="6" y="8"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="127" x="16" y="30.9951">apps/account-app</text><!--MD5=[b2d39259b6aeabc16b394deeb0238426]
+entity B--><rect fill="#FEFECE" filter="url(#f2a7z3bgmnie9)" height="36.2969" style="stroke: #000000; stroke-width: 1.5;" width="156" x="188.5" y="8"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="136" x="198.5" y="30.9951">apps/inventory-app</text><!--MD5=[16fab723be418f7eaf2ea4bd895a8e51]
+entity C--><rect fill="#FEFECE" filter="url(#f2a7z3bgmnie9)" height="36.2969" style="stroke: #000000; stroke-width: 1.5;" width="101" x="29" y="104"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="81" x="39" y="126.9951">libs/greeter</text><!--MD5=[118f42602524ad482f02b27ef22fc383]
+entity D--><rect fill="#FEFECE" filter="url(#f2a7z3bgmnie9)" height="36.2969" style="stroke: #000000; stroke-width: 1.5;" width="92" x="192.5" y="104"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="72" x="202.5" y="126.9951">libs/profile</text><!--MD5=[e1650921a81fac0037ec207a42ac4e7e]
+link A to C--><path d="M79.5,44.241 C79.5,59.4791 79.5,81.8069 79.5,98.4576 " fill="none" id="A-&gt;C" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="79.5,103.8683,83.5,94.8683,79.5,98.8683,75.5,94.8683,79.5,103.8683" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[0cc414c05168401e44af7a1c991d2042]
+link A to D--><path d="M108.294,44.0227 C135.562,60.1433 176.489,84.3392 205.16,101.2895 " fill="none" id="A-&gt;D" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="209.652,103.9454,203.9399,95.9222,205.3478,101.4011,199.8689,102.809,209.652,103.9454" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[635162b0568dccf9b81699e51957888e]
+link B to D--><path d="M261.364,44.241 C256.786,59.6116 250.059,82.1957 245.086,98.8906 " fill="none" id="B-&gt;D" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="243.603,103.8683,250.0055,96.3845,245.0302,99.0763,242.3383,94.101,243.603,103.8683" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[d550ac37da61098974acbc2d84a83ffd]
+@startuml
+rectangle "apps/account-app" as A
+rectangle "apps/inventory-app" as B
+rectangle "libs/greeter" as C
+rectangle "libs/profile" as D
+
+A - -> C
+A - -> D
+B - -> D
+@enduml
+
+PlantUML version 1.2020.09beta15(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 14.0.1+7
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

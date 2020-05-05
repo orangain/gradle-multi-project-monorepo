@@ -1,0 +1,12 @@
+@startuml
+
+rectangle "apps/account-app" as A
+rectangle "apps/inventory-app" as B
+rectangle "libs/greeter" as C
+rectangle "libs/profile" as D
+
+A --> C
+A --> D
+B --> D
+
+@enduml
