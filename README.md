@@ -14,3 +14,10 @@ In this example, there are four subprojects:
 They have the following dependency:
 
 ![Both apps/account-app and apps/inventory-app depend on libs/profile and only apps/account-app depends on libs/greeter](https://github.com/orangain/gradle-multi-project-monorepo/raw/master/docs/deps.svg)
+
+By using `on.push.paths`, only changed apps can be built as follows:
+
+* When a file under the `apps/account-app` is [changed](https://github.com/orangain/gradle-multi-project-monorepo/pull/1), only the `account-app` will be built.
+  ![Only the account-app is built](https://github.com/orangain/gradle-multi-project-monorepo/raw/master/docs/screenshot1.png)
+* When a file under  the `libs/profile` is [changed](https://github.com/orangain/gradle-multi-project-monorepo/pull/2), both the `account-app` and the `inventory-app` will be built.
+  ![both the account-app and the inventory-app will be built](https://github.com/orangain/gradle-multi-project-monorepo/raw/master/docs/screenshot2.png)
