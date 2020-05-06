@@ -5,6 +5,6 @@ package profile
 
 class Profile {
     fun getCurrentProfile(): String {
-        return "Alice"
+        return "Bob"
     }
 }
