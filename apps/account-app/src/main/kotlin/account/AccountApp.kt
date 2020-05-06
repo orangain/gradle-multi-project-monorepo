@@ -15,5 +15,5 @@ class AccountApp {
 }
 
 fun main(args: Array<String>) {
-    println("[account-service]: ${AccountApp().greeting}")
+    println("[account-app]: ${AccountApp().greeting}")
 }
